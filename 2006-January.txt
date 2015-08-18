@@ -1,0 +1,25 @@
+From ahalda at cs.mcgill.ca  Tue Jan 10 23:50:33 2006
+From: ahalda at cs.mcgill.ca (ahalda at cs.mcgill.ca)
+Date: Tue, 10 Jan 2006 17:50:33 -0500 (EST)
+Subject: [Libacm-users] bug fix
+Message-ID: <34089.216.239.81.39.1136933433.squirrel@mail.cs.mcgill.ca>
+
+Hi,
+
+I got a segmentation fault when decoding a file and creating an output file.
+
+Here is a patch to fix it (only 2 lines changed in acmtool.c). I haven't
+checked for the same problem elsewhere. To apply:
+patch -p1 <patch
+
+Otherwise, acmtool works as desired. Thanks for writing it!
+
+Allan
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: patch
+Type: application/octet-stream
+Size: 510 bytes
+Desc: not available
+URL: <https://lists.berlios.de/pipermail/libacm-users/attachments/20060110/d62b3819/attachment.obj>
+

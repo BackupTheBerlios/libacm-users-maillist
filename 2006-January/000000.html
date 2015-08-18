@@ -1,0 +1,74 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [Libacm-users] bug fix
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/libacm-users/2006-January/index.html" >
+   <LINK REL="made" HREF="mailto:libacm-users%40lists.berlios.de?Subject=Re%3A%20%5BLibacm-users%5D%20bug%20fix&In-Reply-To=%3C34089.216.239.81.39.1136933433.squirrel%40mail.cs.mcgill.ca%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   
+   
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[Libacm-users] bug fix</H1>
+    <B>ahalda at cs.mcgill.ca</B> 
+    <A HREF="mailto:libacm-users%40lists.berlios.de?Subject=Re%3A%20%5BLibacm-users%5D%20bug%20fix&In-Reply-To=%3C34089.216.239.81.39.1136933433.squirrel%40mail.cs.mcgill.ca%3E"
+       TITLE="[Libacm-users] bug fix">ahalda at cs.mcgill.ca
+       </A><BR>
+    <I>Tue Jan 10 23:50:33 CET 2006</I>
+    <P><UL>
+        
+        
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#0">[ date ]</a>
+              <a href="thread.html#0">[ thread ]</a>
+              <a href="subject.html#0">[ subject ]</a>
+              <a href="author.html#0">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Hi,
+
+I got a segmentation fault when decoding a file and creating an output file.
+
+Here is a patch to fix it (only 2 lines changed in acmtool.c). I haven't
+checked for the same problem elsewhere. To apply:
+patch -p1 &lt;patch
+
+Otherwise, acmtool works as desired. Thanks for writing it!
+
+Allan
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: patch
+Type: application/octet-stream
+Size: 510 bytes
+Desc: not available
+URL: &lt;<A HREF="https://lists.berlios.de/pipermail/libacm-users/attachments/20060110/d62b3819/attachment.obj">https://lists.berlios.de/pipermail/libacm-users/attachments/20060110/d62b3819/attachment.obj</A>&gt;
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	
+	
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#0">[ date ]</a>
+              <a href="thread.html#0">[ thread ]</a>
+              <a href="subject.html#0">[ subject ]</a>
+              <a href="author.html#0">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/libacm-users">More information about the Libacm-users
+mailing list</a><br>
+</body></html>
